@@ -22,9 +22,32 @@ struct Home: View {
                     
                     YTView(ID: "Dw6Nvv8UMbU")
                     
+                    Text("Example of an LD Debate")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .padding(.leading, 50)
+                        .padding(.trailing, 50)
                     
+                    YTView(ID: "Dw6Nvv8UMbU")
+                
+                    Text("Example of an LD Debate")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .padding(.leading, 50)
+                        .padding(.trailing, 50)
+                    
+                    YTView(ID: "Dw6Nvv8UMbU")
+                
+                    Text("Example of an LD Debate")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .padding(.leading, 50)
+                        .padding(.trailing, 50)
+                    
+                    YTView(ID: "Dw6Nvv8UMbU")
                 }
             }
+            .navigationTitle("LD Debate")
         }
     }
 }
