@@ -2,27 +2,23 @@
 //  Events.swift
 //  DebateApp
 //
-//  Created by Kaushik Kurapati on 7/8/23.
+//  Created by Kaushik Kurapati on 7/10/23.
 //
 
 import Foundation
+import SwiftUI
 
-let debateEvents = [
-    "Lincoln Douglas",
-    "Cross Examination/Policy",
-    "Public Forum",
-    "World Schools",
-    "Extemperaneous",
+struct Events: Identifiable {
+    let id = UUID()
+    let name: String
+    let location: Int
+}
+
+struct EventList {
+    
+    static let topEvents = [
+        Events(name: "Lincoln Douglas", location: 0),
+        Events(name: "Public Forum", location: 1)
     ]
-
-let speechEvents = [
-    "Oringal Oratory",
-    "Impromptu",
-    "Extemperaneous Commentary",
-    "IX",
-    "DX",
-    "Poetry",
-    "Storytelling"]
-
-let debateViews = [
- Home()]
+    
+}

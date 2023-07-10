@@ -79,13 +79,14 @@ struct Home: View {
                     if showMenu {
                         
                         Image(systemName: "xmark")
-                            .font(.title)
-                            .foregroundColor(.red)
+                            .font(.title3)
+                            .foregroundColor(.white)
                         
                     } else {
                         Image(systemName: "text.justify")
-                            .font(.title)
-                            .foregroundColor(.red)
+                            .font(.title3)
+                            .foregroundColor(Color(red: 0.0, green: 0.0, blue: 128.0, opacity: 1.0))
+                            .padding(.bottom, 6.0)
                     }
                     
                 }
