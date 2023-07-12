@@ -9,10 +9,10 @@ import SwiftUI
 
 struct SideMenuView: View {
     
-    var events: [Events] = EventList.topEvents
-    var listOfEvents = [Home(), Home()]
+    var events: [Events] = EventList.allEvents
     
     var body: some View {
+        
         VStack {
             //      Text("Settings")
             //        .font(.title)
@@ -33,25 +33,29 @@ struct SideMenuView: View {
             //        }).foregroundColor(.white)
             //            .font(.title)
             
-            Text("Debate Events")
+            Text("Events")
                 .font(.system(size: 27))
-                .foregroundColor(.black)
-                .padding(.trailing, 65.0)
+                .foregroundColor(.white)
+                .padding(.trailing, 150.0)
                 .padding(.bottom, 2)
             
             Divider()
-                .frame(width: 225, height: 1)
-                .background(Color.black)
+                .frame(width: 250, height: 1)
+                .background(Color.white)
                 .padding(.bottom, 10)
 
             
             List(events, id: \.id) {event in
-                NavigationLink(destination: listOfEvents[event.location], label: {
+                
+                NavigationLink(destination: Home(), label: {
                     Text(event.name)
                           }).foregroundColor(.black)
                             .font(.system(size: 20))
+                            .padding(7)
             
             }
+            
+            
             //        HStack {
             //            Spacer()
             //            Image(systemName: "chevron.backward")
@@ -105,8 +109,8 @@ struct SideMenuView: View {
             
             Spacer()
         }
-        .frame(width: UIScreen.main.bounds.width/1.5)
-        .background(Color.white)
+        // .frame(width: UIScreen.main.bounds.width/1.4)
+        .background(Color.black)
         .edgesIgnoringSafeArea(.bottom)
         
     }

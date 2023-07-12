@@ -1,14 +1,14 @@
 //
-//  Home.swift
+//  Policy.swift
 //  DebateApp
 //
-//  Created by Kaushik Kurapati on 7/6/23.
+//  Created by Kaushik Kurapati on 7/11/23.
 //
 
 import SwiftUI
 
 
-struct Home: View {
+struct Policy: View {
     
     @State private var showMenu: Bool = false
     
@@ -20,7 +20,7 @@ struct Home: View {
                 ScrollView {
                     VStack {
                         Divider()
-                        Text("Example of an LD Debate")
+                        Text("Example of an Policy Debate")
                             .font(.title3)
                             .fontWeight(.bold)
                             .padding(.leading, 50)
@@ -73,7 +73,7 @@ struct Home: View {
                 
                 
             }
-            .navigationTitle("Lincoln Douglas")
+            .navigationTitle("Policy Debate")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 
@@ -104,14 +104,14 @@ struct Home: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct Policy_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Policy()
     }
 }
 
 
-private extension Home {
+private extension Policy {
     
     func didDismiss() {
         print("dismiss")
